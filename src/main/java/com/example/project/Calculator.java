@@ -52,11 +52,11 @@ public class Calculator{
     // method that determines and returns the result of |num1 - num2|
     // (THIS METHOD DOES NOT PRINT)
     public int absoluteValue(int num1, int num2) {
-        if ((num1 - num2) < 0){
-            return (num1 - num2) * 1;
-        }
-        else {
-            return num1 - num2;
+        num1 -= num2;
+        if (num1>0){
+            return num1;
+        }else{
+            return num1*-1;
         }
     }
     
